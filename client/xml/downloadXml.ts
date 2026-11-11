@@ -1,4 +1,4 @@
-function downloadXml(xmlContent: string, filename: string): void {
+function downloadXml(xmlContent, filename){
     const blob = new Blob([xmlContent], { type: 'application/xml' })
     const url = URL.createObjectURL(blob)
     const a = document.createElement('a')
